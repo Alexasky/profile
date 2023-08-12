@@ -1,0 +1,97 @@
+.About {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	.content {
+		margin-right: 2.5rem;
+		margin-bottom: 7rem;
+		max-width: 100%;
+		text-align: center;
+		font-size: 1.875rem;
+		line-height: 2.25rem;
+	}
+
+	.icons {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		width: 100%;		
+		max-width: 32rem;
+		margin-left: auto;
+		margin-right: auto;
+
+		> div {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			width: 2.5rem;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		p {
+			margin-top: .75rem;
+			font-size: .75rem;
+			line-height: 1rem;
+			font-weight: 700;
+			opacity: 0.8;
+		}
+	}
+
+	.skills {
+		position: relative;
+	}
+	.stars,
+	.code,
+	.youtube {
+		position: absolute;
+	}
+
+	.stars {
+		right: 1rem;
+		top: -2rem;
+	}
+
+	.code {
+		left: 0;
+		bottom: 2rem;
+	}
+
+	.youtube {
+		display: none;
+	}
+}
+
+@media (min-width: 768px) {
+	.About {
+		flex-direction: row;
+
+		.content {
+			margin-bottom: 0;
+			max-width: 32rem;
+			text-align: left;
+		}
+	}	
+}
+
+@media (min-width: 640px) {
+	.About {
+		.icons {
+			grid-template-columns: repeat(6, minmax(0, 1fr));
+			gap: 3rem;
+		}
+
+		.youtube {
+			display: block;
+			right: 6rem;
+			bottom: -1rem;
+		}
+
+		.code {
+			right: 1rem;
+			left: inherit;
+			bottom: 1rem;
+		}
+	}
+}

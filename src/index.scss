@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, var(--font-family);
+	font-size: 1rem;
+	line-height: 1.6rem;
+	font-weight: normal;
+	color: #444;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, p {
+	margin: 0;
+	margin-bottom: 2.5rem;
+}
+
+h1 {
+	max-width: 56rem;
+	font-size: 4.5rem;
+	line-height: 1.1;
+	letter-spacing: -.05em;
+	text-align: center;
+	margin: 0 auto 2.5rem auto;
+}
+
+h2 {	
+	font-size: 3rem;
+	line-height: 1;
+	font-weight: 700;
+}
+
+p {
+	margin: 0;
+	margin-bottom: 1.25rem;
+}
+
+a {
+	position: relative;
+	display: block;
+	color: inherit;
+	text-decoration: inherit;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+ol,
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+section {
+	margin-bottom: 7rem;
+}
+
+#root {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	max-width: 1200px;
+	min-height: 100vh;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 100%;
+}
+
+#root {
+	padding: 1.25rem;
+}
+
+main {
+	flex: 1 1 0%;
+	width: 100%;
+	margin-top: -2rem;
+}
+
+footer {
+	width: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@mixin animate($animation, $duration, $method, $times) {
+	animation: $animation $duration $method $times;
+}
+
+@mixin keyframes($name) {
+	@keyframes #{$name} {
+		@content;
+	}
+}
+
+:root {
+	--black: #3B434E;
+	--grey: #A4A4A4;
+	--grey-light: #EBEBEB;
+	--grey-dark: #62666C;
+	--white: white;
+	--primary: #6849DF;
+	--primary-hover: #4A3894;
+	--red: #DE0000;
+	--red-light: #FC836D;
+	--green: #057A49;
+	--green-light: #C8F8E4;
+	--pink: #D60270;
+	--pink01: #E158A0;
+	--pink02: #D93089;
+	--pink03: #AE005C;
+	--pink04: #880048;
+	--font-family: 'Raleway', sans-serif;
+}

@@ -1,0 +1,66 @@
+.review {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	background: var(--pink03);	
+	padding: 1.25rem;
+	border: 1px solid var(--pink);
+	border-radius: .5rem;
+	color: var(--white);
+
+	svg {
+		position: absolute;
+		top: -14px;
+		left: -21px;
+		width: 35px;
+		height: 35px;
+		transform: rotate(15deg);
+		color: var(--pink01);
+	}
+
+	.quote {
+		flex-grow: 1;
+		font-size: 1rem;
+		line-height: 1.5rem;
+		font-style: italic;
+		text-align: left;	
+	}
+
+	.name {
+		font-size: .75rem;
+		line-height: 1rem;
+		margin: 0;
+	}
+
+	.yay,
+	.squiggle {
+		position: absolute;
+	}
+
+	.yay {		
+		top: -50px;
+		left: 0;
+		right: auto;
+		bottom: auto;
+		width: 5rem;
+		z-index: -100;
+	}
+
+	.squiggle {
+		top: -30px;
+		right: -15px;
+		width: 2.75rem;
+		z-index: -10;
+	}
+}
+
+@media (min-width: 768px) {
+	.review {
+		.yay {
+			top: auto;
+			left: auto;	
+			right: -25px;
+			bottom: -50px;			
+		}
+	}
+}

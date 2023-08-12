@@ -1,0 +1,15 @@
+.Description {
+	max-width: 48rem;
+	margin: auto;
+	margin-bottom: 5rem;
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	text-align: center;	
+}
+
+@media (min-width: 640px) {
+	.Description {
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+}

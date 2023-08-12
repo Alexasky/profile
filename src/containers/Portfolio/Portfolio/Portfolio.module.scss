@@ -1,0 +1,27 @@
+.portfolio {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 2rem;
+	align-items: flex-start;
+	margin-bottom: 4rem;	
+}
+
+.projects {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 2rem;
+	align-items: flex-start;
+	margin-bottom: 4rem;
+}
+
+.btnWrap {
+	text-align: center;
+	width: 100%;
+}
+
+@media (max-width: 768px) {
+	.portfolio {
+		grid-template-columns: repeat(1, minmax(0, 1fr));
+		gap: 1.25rem;
+	}
+}

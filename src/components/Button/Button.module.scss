@@ -1,0 +1,192 @@
+.button {	
+	display: inline-block;
+	position: relative;
+	margin: 0 auto;
+	padding: 0.75rem 2rem;
+	text-align: center;
+	border: 1px solid var(--pink);
+	border-radius: 3px;
+	white-space: nowrap;
+	background: var(--white);
+	font-size: 1rem;
+	color: var(--pink);
+	transition: background .8s;
+	outline: none;
+	overflow: hidden;
+	cursor: pointer;
+
+
+	&:hover {
+		color: var(--white);
+		background: var(--pink);
+
+		span {
+				z-index: 1;
+		}
+	}
+
+	&.big {
+		width: 100%;
+		max-width: 42rem;
+
+		&::after {
+			content: "";
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 120%;
+			height: 110%;
+			background-color: var(--pink);
+			transition: transform .55s cubic-bezier(.52, .08, .18, 1);
+			transform-origin: right top;
+			transform: translateX(-101%) skewX(-17.62deg);
+			backface-visibility: hidden;
+		}
+	
+		&:hover {
+			color: var(--white);
+			background-color: var(--pink);
+			transition: background-color .1s linear .35s;
+			outline-width: 0;
+	
+			&::after {
+				transform: translateX(0) skewX(-17.62deg);
+				transform-origin: left top;
+			}
+		}
+	}
+
+	&.arrow {
+		padding: 13px 55px 13px 25px;		
+		text-decoration: none;
+		font-weight: 600;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 10px;
+			right: 30px;
+			width: 30px;
+			height: 30px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Cpath fill='none' stroke='%23d60270' stroke-width='2' stroke-miterlimit='10' d='M63 32H30'/%3E%3Cpath fill='none' stroke='%23d60270' stroke-width='2' stroke-linejoin='bevel' stroke-miterlimit='10' d='M54 41l9-9-9-9'/%3E%3C/svg%3E");
+			transition: color .55s cubic-bezier(.52, .08, .18, 1), transform .55s cubic-bezier(.52, .08, .18, 1);			
+		}
+
+		&::after {
+			content: "";
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 120%;
+			height: 110%;
+			background-color: var(--pink);
+			transition: transform .55s cubic-bezier(.52, .08, .18, 1);			
+			transform-origin: right top;
+			transform: translateX(-101%) skewX(-17.62deg);
+			backface-visibility: hidden;
+		}
+
+		&:hover {
+			color: var(--white);
+			background-color: var(--pink);
+			transition: background-color .1s linear .35s;
+			outline-width: 0;
+
+			&::before {
+				background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Cpath fill='none' stroke='%23fff' stroke-width='2' stroke-miterlimit='10' d='M63 32H30'/%3E%3Cpath fill='none' stroke='%23fff' stroke-width='2' stroke-linejoin='bevel' stroke-miterlimit='10' d='M54 41l9-9-9-9'/%3E%3C/svg%3E");
+				transform: translateX(5px);
+				z-index: 1;		
+			}
+		
+			&::after {
+				transform: translateX(0) skewX(-17.62deg);
+				transform-origin: left top;
+			}			
+		}		
+	}
+
+	span {
+		position: relative;
+	}
+}
+
+.solid {
+	border: 0;
+	border-radius: 3px;
+	background-color: var(--pink);
+	color: var(--white);
+	letter-spacing: 2px;
+	transition: background-color .1s ease-in-out, color .1s ease-in-out;
+	outline: none;
+
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 0;
+		border-width: 3px;
+		border-style: solid;
+		border: 3px solid transparent;
+		border-top-color: transparent;
+		border-right-color: transparent;
+		border-radius: 3px;
+		box-sizing: border-box;
+	}
+
+	&::after {
+		bottom: 0;
+		right: 0;
+	}
+
+	&:hover {
+		background-color: var(--white);
+		color: var(--pink);
+		border-bottom-color: var(--pink);
+		border-left-color: var(--pink);
+
+		&::before,
+		&::after {
+			width: 100%;
+			height: 100%;
+
+		}
+
+		&::after {
+			border-bottom-color: var(--pink);
+			border-left-color: var(--pink);
+			transition: height .2s ease-out, width .2s ease-out .2s;
+		}
+
+		&::before {
+			border-right-color: var(--pink);
+			border-top-color: var(--pink);
+			transition: width .2s ease-out, height .2s ease-out .2s;
+		}
+
+	}
+}
+
+.circle {
+	padding: 1rem;
+	border-radius: 50%;	
+
+	svg {
+			color: var(--pink);
+		}
+
+	&:hover {
+		svg {
+			color:var(--white);
+		}
+	}
+}

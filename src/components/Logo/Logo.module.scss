@@ -1,0 +1,14 @@
+.Logo {	
+	padding: 1rem;
+	margin-top: 2rem;
+	border-radius: 50%;
+	color: var(--white);
+	background: var(--pink);
+	transform: translate(0, 0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
+	transition:transform .5s cubic-bezier(.4, 0, .2, 1);
+	cursor: pointer;
+
+	&:hover {
+		transform: translate(0, 0) rotate(360deg) skewX(0) skewY(0) scaleX(.75) scaleY(.75);
+	}
+}

@@ -1,0 +1,22 @@
+.Social {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: center;
+
+
+	a {
+		display: block;
+		margin: 0.5rem 1rem;
+		color: var(--pink);
+		
+		svg {
+			width: 30px;
+			height: 30px;
+		}
+
+		&:hover {
+			opacity: .8;
+		}
+	}
+}
