@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/profile/static/css/main.df4f25a7.css",
+    "main.js": "/profile/static/js/main.9a676fbc.js",
+    "static/media/cv.pdf": "/profile/static/media/cv.c81e998d2fc444141ed2.pdf",
+    "static/media/movies-mobile.jpg": "/profile/static/media/movies-mobile.3264d3d8f8ee992e79a4.jpg",
+    "static/media/food_mobile.jpg": "/profile/static/media/food_mobile.0765fe94de359861a76f.jpg",
+    "static/media/shop_mobile.jpg": "/profile/static/media/shop_mobile.0c296f23046f4fafa347.jpg",
+    "static/media/openimis_mobile.jpg": "/profile/static/media/openimis_mobile.bd9f6bac31697d0ac759.jpg",
+    "static/media/p4h_mobile.jpg": "/profile/static/media/p4h_mobile.0be86267da465927567d.jpg",
+    "static/media/kinder_mobile.jpg": "/profile/static/media/kinder_mobile.d26e986c9edbd56030c2.jpg",
+    "static/media/fancyLines.svg": "/profile/static/media/fancyLines.0c27d5d2d643450035df530329b6decc.svg",
+    "static/media/owltop.svg": "/profile/static/media/owltop.14848a9964752db85eda29d732024097.svg",
+    "static/media/yay.svg": "/profile/static/media/yay.9344f4480239463b3ea4b97d8d512872.svg",
+    "static/media/stars.svg": "/profile/static/media/stars.d4c71fbbb4e12914a19ada166c02b01a.svg",
+    "static/media/html.svg": "/profile/static/media/html.4cdf449704563ee1520885d282c524d8.svg",
+    "static/media/youtube.svg": "/profile/static/media/youtube.dc254b516d4ba8e04d7a4e27b1fe72ac.svg",
+    "static/media/code.svg": "/profile/static/media/code.b078c41aba4c8b17084f875c1b0e3ce6.svg",
+    "static/media/squiggle.svg": "/profile/static/media/squiggle.2ba0ddfe2c56d7f319750a56c2e15a67.svg",
+    "static/media/lineBreak.svg": "/profile/static/media/lineBreak.15af894f41d0b853de7c38676736cb61.svg",
+    "index.html": "/profile/index.html",
+    "main.df4f25a7.css.map": "/profile/static/css/main.df4f25a7.css.map",
+    "main.9a676fbc.js.map": "/profile/static/js/main.9a676fbc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.df4f25a7.css",
+    "static/js/main.9a676fbc.js"
+  ]
+}
