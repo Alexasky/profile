@@ -10,7 +10,7 @@ import { ScrollToTop } from './hooks/ScrollToTop';
 function App() {
     return (
         <>
-            <BrowserRouter basename='/portfolio-app'>
+            <BrowserRouter basename='/profile'>
                 <ScrollToTop />
                 <Header />
                 <main className='container content'>
