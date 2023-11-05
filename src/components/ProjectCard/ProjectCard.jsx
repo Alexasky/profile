@@ -9,10 +9,10 @@ function ProjectCard({
     link = '',
     github = '',
     tags = [],
-    filterHandler = Function.prototype,
+    filterHandler = Function.prototype
 }) {
     return (
-        <div className={styles.ProjectCard}>
+        <div className={`${styles.ProjectCard} card animate__animated animate__zoomIn`}>
             {img && (
                 <a className={styles.linkImg} href={link}>
                     <img src={img} alt={title} />

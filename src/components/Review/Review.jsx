@@ -6,7 +6,7 @@ import squiggleIcon from '../../assets/doodles/squiggle.svg';
 
 function Review({ quote, name, job, index }) {
     return (
-        <div className={styles.review}>
+        <div className={`${styles.review} card`}>
             <FontAwesomeIcon icon={icon({ name: 'quote-left' })} />
             <p className={styles.quote}>{quote}</p>
             <p className={styles.name}>

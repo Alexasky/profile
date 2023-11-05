@@ -5,7 +5,8 @@ import { Home } from './pages/Home';
 import { Portfolio } from './pages/Portfolio';
 import { NotFound } from './pages/NotFound';
 import { Up } from './components/Up/Up';
-import { ScrollToTop } from './hooks/ScrollToTop';
+import { ScrollToTop } from './hooks/scrollToTop';
+import 'animate.css';
 
 function App() {
     return (

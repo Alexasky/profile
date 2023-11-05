@@ -4,6 +4,7 @@ import { ProjectCard } from '../ProjectCard/ProjectCard';
 import { useState, useEffect } from 'react';
 import { useNavigate, useLocation, Link } from 'react-router-dom';
 import { Button } from '../Button/Button';
+import { shuffle as _shuffle } from 'lodash-es'
 
 function Projects() {
     const [overwriteProjects, setOverwriteProjects] = useState([]);
@@ -16,20 +17,19 @@ function Projects() {
         navigate({
             pathname,
             search: `?filter=${tag}`,
-        });
+        });        
     };
 
     const projectsList =
         overwriteProjects.length > 0 ? overwriteProjects : projects;
 
     useEffect(() => {
-        setOverwriteProjects(
-            search
-                ? projects.filter((item) =>
+        search
+                ? setOverwriteProjects(_shuffle(projects.filter((item) =>
                       item.tags.includes(search.split('=')[1])
-                  )
-                : projects
-        );
+                )))
+                : setOverwriteProjects(projects)
+
     }, [search]);
 
     return (
@@ -41,7 +41,7 @@ function Projects() {
                         {...item}
                         filterHandler={filterHandler}
                     />
-                ))}
+                ))}              
             </div>
             {search && (
                 <div className={styles.btnWrap}>

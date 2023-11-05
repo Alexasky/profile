@@ -9,7 +9,7 @@ function Portfolio() {
             <Title header='h1' icon={codeIcon} iconTitle='codeIcon'>
                 Projects
             </Title>
-            <Description text='I ve built cool apps and websites using anything from HTML to React (and even PHP!). Here are some of my favorite projects over the course of my journey.' />
+            <Description text="I've built cool apps and websites using anything from HTML to React. Here are some of my projects over the course of my journey." />
             <Projects />
         </>
     );

@@ -7,7 +7,7 @@
 	text-align: center;
 	margin: 5rem auto 23rem auto;
 	max-width: 1200px;
-	animation: scaleDownIn 1.5s cubic-bezier(0.87, 0, 0.13, 1);
+	// animation: scaleDownIn 1.5s cubic-bezier(0.87, 0, 0.13, 1);
 
 	.svgWrapper {
 		display: block;
@@ -173,6 +173,23 @@ p {
 		}	
 } 
 
+.hero h1 span {
+	text-decoration: none;
+	opacity: 0;
+	animation: fadeIn 2s ease forwards;
+	animation-delay: calc(var(--char-index) * 30ms);
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
 @keyframes scaleDownIn {
 	from {
 		opacity: 0;
@@ -296,3 +313,4 @@ p {
 		line-height: 1;
 	}	
 }
+

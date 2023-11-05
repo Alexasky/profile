@@ -6,7 +6,7 @@ import youtubeIcon from '../../assets/doodles/youtube.svg';
 function About() {
     return (
         <section className={styles.About}>
-            <div className={styles.skills}>
+            <div className={`${styles.skills} skills`}>
                 <p className={styles.content}>
                     Here is my toolbelt
                     <br /> for designing websites and apps.
@@ -19,7 +19,7 @@ function About() {
                     alt='youtubeIcon'
                 />
             </div>
-            <div className={styles.icons}>
+            <div className={`${styles.icons} icons`}>
                 <div title='HTML'>
                     <img
                         src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'
