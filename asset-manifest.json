@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.101ad9bc.css",
+    "main.css": "/static/css/main.17e8b4df.css",
     "main.js": "/static/js/main.389a36a9.js",
     "static/media/cv.pdf": "/static/media/cv.c81e998d2fc444141ed2.pdf",
     "static/media/openimis_mobile.jpg": "/static/media/openimis_mobile.bd9f6bac31697d0ac759.jpg",
@@ -18,11 +18,11 @@
     "static/media/code.svg": "/static/media/code.b078c41aba4c8b17084f875c1b0e3ce6.svg",
     "static/media/squiggle.svg": "/static/media/squiggle.2ba0ddfe2c56d7f319750a56c2e15a67.svg",
     "static/media/lineBreak.svg": "/static/media/lineBreak.15af894f41d0b853de7c38676736cb61.svg",
-    "main.101ad9bc.css.map": "/static/css/main.101ad9bc.css.map",
+    "main.17e8b4df.css.map": "/static/css/main.17e8b4df.css.map",
     "main.389a36a9.js.map": "/static/js/main.389a36a9.js.map"
   },
   "entrypoints": [
-    "static/css/main.101ad9bc.css",
+    "static/css/main.17e8b4df.css",
     "static/js/main.389a36a9.js"
   ]
 }
