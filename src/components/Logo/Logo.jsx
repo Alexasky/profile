@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Logo() {
     return (
         <Link to={`/`}>
-            <div className={styles.Logo}>
+            <div className={styles.Logo} aria-label='link to the home page' role='button'>
                 <FontAwesomeIcon
                     icon={icon({ name: 'a', style: 'solid' })}
                     size='lg'

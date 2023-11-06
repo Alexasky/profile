@@ -27,7 +27,7 @@ function Portfolio() {
             </div>
             <div className={styles.btnWrap}>
                 <Link to={`/portfolio`}>
-                    <Button appearance='big'>
+                    <Button appearance='big' label='View All Projects'>
                         <span>View All Projects</span>
                     </Button>
                 </Link>

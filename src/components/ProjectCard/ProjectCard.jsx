@@ -25,7 +25,7 @@ function ProjectCard({
                     </a>
                     <div className={styles.linkIcons}>
                         {link && (
-                            <a href={link}>
+                            <a href={link} aria-label='link to the website page'>
                                 <FontAwesomeIcon
                                     icon={icon({
                                         name: 'square-up-right',
@@ -35,7 +35,7 @@ function ProjectCard({
                             </a>
                         )}
                         {github && (
-                            <a href={github}>
+                            <a href={github} aria-label='link to the project on github'>
                                 <FontAwesomeIcon
                                     icon={icon({
                                         name: 'github',

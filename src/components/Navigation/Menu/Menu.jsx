@@ -49,6 +49,7 @@ function Menu({ className }) {
                     [styles.open]: open,
                 })}
                 onClick={onToggle}
+                aria-label='Menu'
             >
                 <span className={styles.burger}></span>
             </button>

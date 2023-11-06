@@ -26,8 +26,8 @@ function Up() {
         >
             <Button
                 appearance='circle'
-                clickHandler={scrollToTop}
-                aria-label='UP'
+                label="up"
+                clickHandler={scrollToTop}                
             >
                 <FontAwesomeIcon
                     icon={icon({ name: 'chevron-up', style: 'solid' })}

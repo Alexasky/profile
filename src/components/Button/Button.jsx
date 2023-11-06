@@ -4,6 +4,7 @@ function Button({
     appearance = 'none',
     link = '',
     clickHandler = Function.prototype,
+    label= '',
     children,
     className,
     ...props
@@ -28,6 +29,7 @@ function Button({
                 [styles.circle]: appearance === 'circle',
             })}
             onClick={clickHandler}
+            aria-label={label}
         >
             {children}
         </button>

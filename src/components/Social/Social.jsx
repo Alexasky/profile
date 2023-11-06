@@ -8,6 +8,7 @@ function Social() {
                 href='https://github.com/Alexasky'
                 target='_blank'
                 rel='noreferrer'
+                aria-label='link to the github page'
             >
                 <FontAwesomeIcon
                     icon={icon({ name: 'github', style: 'brands' })}
@@ -17,6 +18,7 @@ function Social() {
                 href='https://www.linkedin.com/in/alexandra-korenkova-81131562/'
                 target='_blank'
                 rel='noreferrer'
+                aria-label='link to the linkedin page'
             >
                 <FontAwesomeIcon
                     icon={icon({ name: 'linkedin', style: 'brands' })}
@@ -26,6 +28,7 @@ function Social() {
                 href='https://www.facebook.com/alexa.korenkova'
                 target='_blank'
                 rel='noreferrer'
+                aria-label='link to the facebook page'
             >
                 <FontAwesomeIcon
                     icon={icon({

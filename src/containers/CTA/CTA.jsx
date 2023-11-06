@@ -12,7 +12,7 @@ function CTA() {
                 alt='lineBreakIcon'
             />
             <h2 className={`content__title`} data-splitting="chars" data-effect1>Interested in Working Together?</h2>
-            <Button link='mailto:alex.korenkova@gmail.com' appearance='solid'>
+            <Button link='mailto:alex.korenkova@gmail.com' appearance='solid' label='Get in Touch'>
                 Get in Touch
             </Button>
             <img

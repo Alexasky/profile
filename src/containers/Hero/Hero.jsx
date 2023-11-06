@@ -77,7 +77,7 @@ function Hero(className) {
                 <div></div>
             </div>
             <div className={`${styles.cv} animate__animated animate__zoomIn animate__delay-2s`}>
-                <Button appearance='arrow' link={resume}>
+                <Button appearance='arrow' link={resume} label='Download CV'>
                     Download CV
                 </Button>
             </div>
