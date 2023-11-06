@@ -6,6 +6,7 @@
 	justify-content: center;
 	text-align: center;
 	margin: 5rem auto 23rem auto;
+	padding-bottom: 4rem;
 	max-width: 1200px;
 	// animation: scaleDownIn 1.5s cubic-bezier(0.87, 0, 0.13, 1);
 
@@ -21,16 +22,12 @@
 	}
 
 	.html {
+		display: none;
 		right: 0;
 		top: -3em;
 		animation-delay: 0.1s;
 		width: 4rem;
 		height: 4rem;
-
-		img {
-			width: 64px;
-			height: 64px;
-		}
 	}
 
 	.palette {
@@ -226,6 +223,7 @@ p {
 		margin-bottom: 18rem;
 		
 		.html {
+			display: block;
 			right: 7rem;
 		}
 
