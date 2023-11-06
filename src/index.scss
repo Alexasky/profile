@@ -66,8 +66,10 @@ section {
 	justify-content: center;
 	align-items: center;
 	margin: auto;
+	padding: 1.25rem;
 	max-width: 1200px;
 	min-height: 100vh;
+	overflow: hidden;
 }
 
 header {
@@ -77,15 +79,10 @@ header {
 	width: 100%;
 }
 
-#root {
-	padding: 1.25rem;
-}
-
 main {
 	flex: 1 1 0%;
 	width: 100%;
 	margin-top: -2rem;
-	overflow: hidden;
 }
 
 footer {
